@@ -18,9 +18,9 @@ for line in text:
         #randomized time between each word
         time.sleep(len(word)*0.1)
         pyautogui.press('space')
-        # 1/12 chance to replicate a 'break' or pause for 5 to 15 seconds
-        if random.randint(1, 5) == 1:
-            randInterval = random.randint(5, 15)
+        
+        if random.randint(1, 100) == 1:
+            randInterval = random.randint(50, 150)
             print(f"pause for {randInterval}")
             time.sleep(randInterval)
 
